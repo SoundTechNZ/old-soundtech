@@ -1,85 +1,39 @@
-# OS generated files           #
-################################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-Icon?
-ehthumbs.db
-Thumbs.db
-
-# Magento Configurations       #
-################################
-/app/etc/local.xml
-
-# Magento Media                #
-################################
-
-
-# Magento Var                  #
-################################
-.cache/
-/tmp/*
-/var/cache/*
-/var/full_page_cache/*
-/var/locks/*
-/var/report/*
-/var/session/*
-/var/log/*
-/var/logging/*
-/var/export/*
-
-# Magento Sitemap              #
-################################
-/sitemaps/*
-/sitemap/*
-/sitemap.xml
-
-# archives                     #
-################################
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# logs and databases           #
-################################
+# Don't include any temporary files and other unimportant things
 *.log
-*.sql
-*.sqlite
+*.bak
+*.bak.*
+*.thumbs/
+.DS_Store
+Thumbs.db
+.svn
+*.swp
+.idea/*
+.idea/workspace.xml
 
-# IDE project files            #
-################################
-.cache/
-.viminfo
-/nbproject
-/.project
-/.sass-cache
-/.idea
-/.idea/*
-/cgi-bin
-*.sublime-project
-*.sublime-workspace
-node_modules/
-skin/frontend/base/default/aoe_templatehints/
-skin/frontend/loventools/gulpfile.js
-skin/frontend/loventools/package.json
-.modgit/Aoe_TemplateHints/
+# IDE files and such
+nbproject
 
-
-# magento db config #
-####################
+# NEVER commit this file, as it may vary per server. Instead, make a copy like
+# local.xml.dev or local.xml.prod. This prevents things from breaking when
+# deploy or pulling down changes.  Also be careful about storing db credentials.
 app/etc/local.xml
-errors/local.xml
-# magento folder #
-#####################
-downloader/*
-var/*
-!var/.htaccess
-!var/backup/*
-!var/extendware/*
+
+# The same thing applies to .htaccess
+#/.htaccess
+
+# Other paths and files to ignore
+# Other `media` paths might need to be added
+downloader/.cache
+downloader/cache.cfg
+#media/catalog
+#media/css
+#media/css_secure
+#media/js
+#media/import
+#media/tmp
+#media/uploads
+#media/wysiwyg
+var
+
+# The sitemap should be auto-generated
+sitemap.xml
