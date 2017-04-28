@@ -8,6 +8,7 @@ Thumbs.db
 .svn
 *.swp
 .idea/*
+.idea/workspace.xml
 
 # IDE files and such
 nbproject
