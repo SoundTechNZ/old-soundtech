@@ -1,38 +1,85 @@
-# Don't include any temporary files and other unimportant things
-*.log
-*.bak
-*.bak.*
-*.thumbs/
+# OS generated files           #
+################################
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
 Thumbs.db
-.svn
-*.swp
-.idea/*
 
-# IDE files and such
-nbproject
+# Magento Configurations       #
+################################
+/app/etc/local.xml
 
-# NEVER commit this file, as it may vary per server. Instead, make a copy like
-# local.xml.dev or local.xml.prod. This prevents things from breaking when
-# deploy or pulling down changes.  Also be careful about storing db credentials.
+# Magento Media                #
+################################
+
+
+# Magento Var                  #
+################################
+.cache/
+/tmp/*
+/var/cache/*
+/var/full_page_cache/*
+/var/locks/*
+/var/report/*
+/var/session/*
+/var/log/*
+/var/logging/*
+/var/export/*
+
+# Magento Sitemap              #
+################################
+/sitemaps/*
+/sitemap/*
+/sitemap.xml
+
+# archives                     #
+################################
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# logs and databases           #
+################################
+*.log
+*.sql
+*.sqlite
+
+# IDE project files            #
+################################
+.cache/
+.viminfo
+/nbproject
+/.project
+/.sass-cache
+/.idea
+/.idea/*
+/cgi-bin
+*.sublime-project
+*.sublime-workspace
+node_modules/
+skin/frontend/base/default/aoe_templatehints/
+skin/frontend/loventools/gulpfile.js
+skin/frontend/loventools/package.json
+.modgit/Aoe_TemplateHints/
+
+
+# magento db config #
+####################
 app/etc/local.xml
-
-# The same thing applies to .htaccess
-#/.htaccess
-
-# Other paths and files to ignore
-# Other `media` paths might need to be added
-downloader/.cache
-downloader/cache.cfg
-#media/catalog
-#media/css
-#media/css_secure
-#media/js
-#media/import
-#media/tmp
-#media/uploads
-#media/wysiwyg
-var
-
-# The sitemap should be auto-generated
-sitemap.xml
+errors/local.xml
+# magento folder #
+#####################
+downloader/*
+var/*
+!var/.htaccess
+!var/backup/*
+!var/extendware/*
