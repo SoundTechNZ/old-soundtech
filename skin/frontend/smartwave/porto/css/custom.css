@@ -233,7 +233,7 @@ ul.scene > li.layer{width:100%;height:100%}
 .header-container.sticky-header .main-nav ul.menu>li.menu-static-width>a,
 .header-container.sticky-header .main-nav ul.menu>li.menu-full-width>a,
 .header-container.sticky-header .main-nav ul.menu>li.menu-item-has-children>a {
-  padding-left: 11px!important;
+  padding-left: 8px!important;
 }
 
 .header-container.type20 .compare-link>a,
