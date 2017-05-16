@@ -317,6 +317,10 @@ ul.scene > li.layer{width:100%;height:100%}
   overflow: hidden;
 }
 
+/* Checkout */
+.opc-ajax-loader {
+  display: none !important;
+}
 
 @media (max-width:1319px) {
   .menu.side-menu>li.menu-full-width .nav-sublist-dropdown {
