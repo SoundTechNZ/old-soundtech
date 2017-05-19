@@ -311,6 +311,12 @@ ul.scene > li.layer{width:100%;height:100%}
   padding: 10px;
 }
 
+/* category products */
+.category-products .products-grid li.item .details-area .product-name {
+  height: 55px;
+  overflow: hidden;
+}
+
 /*  */
 .sidebar-filterproducts .filter-products .products div.item .details-area .product-name {
   height: 72px;
@@ -333,5 +339,8 @@ ul.scene > li.layer{width:100%;height:100%}
   }
 }
 @media (max-width:991px) {
-
+  /* Std */
+  .std img {
+    width: 100%;
+  }
 }
