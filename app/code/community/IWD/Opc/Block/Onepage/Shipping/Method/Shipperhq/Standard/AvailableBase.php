@@ -1,6 +1,0 @@
-<?php
-class IWD_Opc_Block_Onepage_Shipping_Method_Shipperhq_Standard_AvailableBase
-    extends Mage_Checkout_Block_Onepage_Shipping_Method_Available
-{
-
-}
