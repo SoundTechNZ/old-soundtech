@@ -1,0 +1,7 @@
+<?php $basedir = Mage::getBaseUrl('media'); ?>
+<fieldset class="form-list">
+<?php $_code=$this->getMethodCode() ?>  
+    <ul id="payment_form_<?php echo $_code ?>" style="display:none">
+        <li><?php echo Mage::helper('polipay')->__('<a target="_blank" href="http://www.polipayments.com/consumer"><img src="'.$basedir.'poli/poli.gif"></a><br><a target="_blank" href=https://transaction.apac.paywithpoli.com/POLiFISupported.aspx?merchantcode='.$this->getMethod()->getMerchantCode().'>Available Banks</a><br>You will be redirected to your bank website when you place an order.') ?></li>
+    </ul>
+</fieldset>

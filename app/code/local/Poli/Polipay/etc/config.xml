@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   Poli
+ * @package    Poli_Polipay
+ * @author     ModuleCreator
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+        <crontab>
+            <jobs>
+                <poli_polipay_purge>
+
+				  <schedule>
+                    <cron_expr>*/2 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>polipay/observer::runCron</model>
+                </run>
+                </poli_polipay_purge>
+            </jobs>
+        </crontab>
+    <modules>
+        <Poli_Polipay>
+            <version>0.1.1</version>
+        </Poli_Polipay>
+    </modules>
+    <frontend>
+           <routers>
+            <polipay>
+                <use>standard</use>
+                <args>
+                    <module>Poli_Polipay</module>
+                    <frontName>polipay</frontName>
+                </args>
+            </polipay>
+        </routers> 	
+    	        <layout>
+            <updates>
+                <polipay>
+                    <file>polipay.xml</file>
+                </polipay>
+            </updates>
+        </layout>
+    </frontend>
+
+    <global>
+        <models>
+            <polipay>
+                <class>Poli_Polipay_Model</class>
+                
+                <resourceModel>polipay_resource</resourceModel>
+            </polipay>
+            <polipay_resource>
+                <class>Poli_Polipay_Model_Resource</class>
+           		<deprecatedNode>polipay_mysql4</deprecatedNode>
+		
+                <entities>
+                 
+                    <polipay_transactions>
+						<table>polipay_transactions</table>
+					</polipay_transactions>
+					<polipay_receipts>
+						<table>polipay_receipts</table>
+					</polipay_receipts>
+					
+                </entities>
+            </polipay_resource>
+        </models>
+        <resources>
+            <polipay_setup>
+                <setup>
+                    <module>Poli_Polipay</module>
+                   <class>Poli_Polipay_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </polipay_setup>
+            <polipay_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </polipay_write>
+            <polipay_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </polipay_read>
+        </resources>
+        <blocks>
+            <polipay>
+                <class>Poli_Polipay_Block</class>
+            </polipay>
+        </blocks>
+        <helpers>
+            <polipay>
+                <class>Poli_Polipay_Helper</class>
+            </polipay>
+        </helpers>
+    </global>
+    	<default>
+		<payment>
+			<polipay_payment>
+				<active>1</active>
+				<model>polipay/payment</model>
+				<order_status>pending</order_status>
+				<title>Internet Banking (Pay with POLi)</title>
+				<merchantcode>demo</merchantcode>
+				<authcode>demo</authcode>
+				<order_status>1</order_status>
+				<testmode>1</testmode>
+			</polipay_payment>
+		</payment>
+	</default>
+</config>

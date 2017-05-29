@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    
+    <polipay_processing_success>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/2columns-right.phtml</template>
+            </action>
+        </reference>
+        <reference name="content">
+            <block type="checkout/onepage_success" name="polipay.success" template="polipay/success.phtml" />
+        </reference>
+    </polipay_processing_success>
+
+    <polipay_processing_redirect>
+        <reference name="content">
+            <block type="core/template" name="polipay.clean" template="polipay/clean.phtml" />
+        </reference>
+    </polipay_processing_redirect>
+
+</layout>

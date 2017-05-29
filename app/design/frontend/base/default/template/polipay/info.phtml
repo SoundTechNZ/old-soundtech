@@ -1,0 +1,7 @@
+<?php
+echo $this->getMethod()->getTitle() . '<br/>';
+if ($this->getInfo()->getLastTransId() == '') {
+    echo '<em>' . Mage::helper('polipay')->__($this->getMethodCode() . ':You will be redirected to your bank website when you place an order.') . '</em>';
+} else {
+    echo Mage::helper('polipay')->__('POLipay Transaction ID: %s', $this->htmlEscape($this->getInfo()->getLastTransId())) . '<br/>';
+}

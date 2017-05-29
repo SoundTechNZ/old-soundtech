@@ -1,0 +1,103 @@
+<style type="text/css">
+    div.receipt span.label{font-weight: bold;}
+    div.receipt fieldset.fields legend{display: block; color: #E26703; font-size: 13px; font-weight: bold;}
+    div.receipt fieldset.fields ul{margin-left: 15px;}
+</style>
+<div class="receipt">
+    <?php if ($this->getError()): ?> 
+        <p><?php echo $this->__('Error in transaction.');?></p>
+    <?php else: ?>
+        <?php $transaction = $this->getReceipt() ?>        
+        <div class="page-title">
+            <h1><?php echo $this->__('Your order has been received.') ?></h1>
+        </div>
+        <?php echo $this->getMessagesBlock()->getGroupedHtml() ?>
+        <h2 class="sub-title"><?php echo $this->__('Thank you for your purchase!') ?></h2>
+
+        <?php if ($this->getOrderId()): ?>
+            <?php if ($this->getCanViewOrder()) : ?>
+                <p><?php echo $this->__('Your order # is: %s.', sprintf('<a href="%s">%s</a>', $this->escapeHtml($this->getViewOrderUrl()), $this->escapeHtml($this->getOrderId()))) ?></p>
+            <?php else : ?>
+                <p><?php echo $this->__('Your order # is: %s.', $this->escapeHtml($this->getOrderId())) ?></p>
+            <?php endif; ?>
+            
+            <h2><?php echo $this->__('Transaction Receipt');?></h2>
+            <fieldset class="fields">
+                <legend><?php echo $this->__('Transaction Details');?></legend>
+                <ul>
+                    <li>
+                        <span id="lblRefNum" class="label"><?php echo $this->__('Reference Number:');?></span>
+                        <span id="lblRefNumValue" class="value"><?php echo $transaction['TransactionRefNo'] ?></span>
+                    </li>
+                    <li>
+                        <span id="lblPaymentAmount" class="label"><?php echo $this->__('Amount Due:');?></span>
+                        <span id="lblPaymentAmountValue" class="value"><?php echo $transaction['CurrencyCode'] . " " . $transaction['PaymentAmount'] ?></span>
+                    </li>
+                    <li>
+                        <span id="lblMerchantCreateTime" class="label"><?php echo $this->__('Initiated at:');?></span>
+                        <span id="lblMerchantCreateTimeValue" class="value"><?php echo $transaction['EstablishedDateTime'] ?></span>
+                    </li>
+                </ul>
+            </fieldset>
+            <br/>
+            <fieldset class="fields">
+                <legend><?php echo $this->__('Payment Details');?></legend>
+                <ul>
+                    <li>
+                        <span id="lblPaidFrom" class="label"><?php echo $this->__('Merchant Reference');?></span>
+                        <span id="lblPaidFromValue" class="value"><?php echo $transaction['CurrencyCode'] . " " . $transaction['MerchantReference'] ?></span>
+                    </li>
+                    <li>
+                        <span id="lblAmountPaid" class="label"><?php echo $this->__('Amount Paid:');?></span>
+                        <span id="lblAmountPaidValue" class="value"><?php echo $transaction['AmountPaid'] ?></span>
+                    </li>
+                    <li>
+                        <span id="lblPaidToAcct" class="label"><?php echo $this->__('Paid To Account Name:');?></span>
+                        <span id="lblPaidToAcctValue" class="value"><?php echo $transaction['MerchantAcctName'] ?></span>
+                    </li>
+                    <li>
+                        <span id="lblPaidToSortCode" class="label"><?php echo $this->__('Paid To Sort Code:');?></span>
+                        <span id="lblPaidToSortCodeValue" class="value"><?php echo $transaction['MerchantAcctSortCode'] ?></span>
+                    </li>
+                    <li>
+                        <span id="lblPaidToAcctNo" class="label"><?php echo $this->__('Paid To Account Number:');?></span>
+                        <span id="lblPaidToAcctNoValue" class="value"><?php echo $transaction['MerchantAcctNumber'] ?></span>
+                    </li>
+                    <li id="liBankReceipt">
+                        <span id="lblBankReceipt" class="label"><?php echo $this->__('Bank Receipt:');?></span>
+                        <span id="lblBankReceiptValue" class="value"><?php echo $transaction['BankReceipt'] ?></span>
+                    </li>
+                    <li id="liBankReceiptTime">
+                        <span id="lblBankReceiptedAt" class="label"><?php echo $this->__('Bank Receipt Time:');?></span>
+                        <span id="lblBankReceiptedAtValue" class="value"><?php echo $transaction['BankReceiptDateTime'] ?></span>
+                    </li>
+                </ul>
+            </fieldset>
+            <br />
+            <p><?php echo $this->__('You will receive an order confirmation email with details of your order and a link to track its progress.') ?></p>
+            <?php if ($this->getCanViewOrder() && $this->getCanPrintOrder()) : ?>
+                <p>
+                    <?php echo $this->__('Click <a href="%s" onclick="this.target=\'_blank\'">here to print</a> a copy of your order confirmation.', $this->getPrintUrl()) ?>
+                    <?php echo $this->getChildHtml() ?>
+                </p>
+            <?php endif; ?>
+        <?php endif; ?>
+
+        <?php if ($this->getAgreementRefId()): ?>
+            <p><?php echo $this->__('Your billing agreement # is: %s.', sprintf('<a href="%s">%s</a>', $this->escapeHtml($this->getAgreementUrl()), $this->escapeHtml($this->getAgreementRefId()))) ?></p>
+        <?php endif; ?>
+
+        <?php if ($profiles = $this->getRecurringProfiles()): ?>
+            <p><?php echo $this->__('Your recurring payment profiles:'); ?></p>
+            <ul class="disc">
+                <?php foreach ($profiles as $profile): ?>
+                    <?php $profileIdHtml = ($this->getCanViewProfiles() ? sprintf('<a href="%s">%s</a>', $this->escapeHtml($this->getProfileUrl($profile)), $this->escapeHtml($this->getObjectData($profile, 'reference_id'))) : $this->escapeHtml($this->getObjectData($profile, 'reference_id'))); ?>
+                    <li><?php echo $this->__('Payment profile # %s: "%s".', $profileIdHtml, $this->escapeHtml($this->getObjectData($profile, 'schedule_description'))) ?></li>
+                <?php endforeach; ?>
+            </ul>
+        <?php endif; ?>        
+    </div> 
+<?php endif; ?>
+<div class="buttons-set">
+    <button type="button" class="button" title="<?php echo $this->__('Continue Shopping') ?>" onclick="window.location='<?php echo $this->getUrl() ?>'"><span><span><?php echo $this->__('Continue Shopping') ?></span></span></button>
+</div>       
