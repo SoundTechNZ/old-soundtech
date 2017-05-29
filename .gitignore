@@ -25,14 +25,14 @@ app/etc/local.xml
 # Other `media` paths might need to be added
 downloader/.cache
 downloader/cache.cfg
-#media/catalog
-#media/css
-#media/css_secure
-#media/js
-#media/import
-#media/tmp
-#media/uploads
-#media/wysiwyg
+media/catalog
+media/css
+media/css_secure
+media/js
+media/import
+media/tmp
+media/uploads
+media/wysiwyg
 var
 
 # The sitemap should be auto-generated
