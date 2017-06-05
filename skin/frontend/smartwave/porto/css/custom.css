@@ -343,4 +343,7 @@ ul.scene > li.layer{width:100%;height:100%}
   .std img {
     width: 100%;
   }
+  #banner-slider-demo-6 img {
+    height: auto !important;
+  }
 }
