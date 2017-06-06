@@ -225,6 +225,11 @@ ul.scene > li.layer{width:100%;height:100%}
 /* Sound Tech Custom Styles */
 /****************************/
 
+/* logo */
+#phone-logo {
+  display: none;
+}
+
 /* sticky header */
 .header-container.type20.sticky-header .main-nav ul.menu>li.act>a,
 .header-container.type20.sticky-header .main-nav ul.menu>li:hover>a {
@@ -348,5 +353,18 @@ ul.scene > li.layer{width:100%;height:100%}
   }
   #testimonials-slider-demo-6, #image-gps {
     display: none !important;
+  }
+}
+
+@media (max-width:415px) {
+  #phone-logo {
+    display: block;
+  }
+  #desk-logo {
+    display: none;
+  }
+  .header>.logo {
+    max-width: 120px;
+    margin: 25px 10px 10px 0;
   }
 }
