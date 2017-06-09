@@ -342,6 +342,10 @@ ul.scene > li.layer{width:100%;height:100%}
   .menu.side-menu>li.menu-full-width .nav-sublist-dropdown {
     width: 719px;
   }
+  /* Std */
+  #banner-slider-demo-6 img {
+    height: 307px !important;
+  }
 }
 @media (max-width:991px) {
   /* Std */
