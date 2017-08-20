@@ -306,6 +306,11 @@ ul.scene > li.layer{width:100%;height:100%}
   padding: 10px 10px 0;
 }
 
+/* special label */
+div.mobile-nav .sw-mobile-menu li>a span.cat-label, .menu.side-menu li>a span.cat-label {
+  display: inline;
+}
+
 /* filter products on homepage */
 .filter-products .products div.item .details-area .product-name {
   height: 60px;
