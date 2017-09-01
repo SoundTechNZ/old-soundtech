@@ -34,6 +34,6 @@ media/tmp
 media/uploads
 media/wysiwyg
 var
-
+media
 # The sitemap should be auto-generated
 sitemap.xml
