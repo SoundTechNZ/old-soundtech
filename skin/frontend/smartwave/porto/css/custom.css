@@ -230,6 +230,10 @@ ul.scene > li.layer{width:100%;height:100%}
   display: none;
 }
 
+.searchautocomplete .nav-search-in .category-fake {
+  margin-top: 12px !important;
+}
+
 /* sticky header */
 .header-container.type20.sticky-header .main-nav ul.menu>li.act>a,
 .header-container.type20.sticky-header .main-nav ul.menu>li:hover>a {

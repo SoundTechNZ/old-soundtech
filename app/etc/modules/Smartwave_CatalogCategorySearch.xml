@@ -2,11 +2,11 @@
 <config>
     <modules>
         <Smartwave_CatalogCategorySearch>
-            <active>true</active>
+            <active>false</active>
             <codePool>local</codePool>
-                <depends>
-                    <Mage_CatalogSearch/>
-                </depends>
+            <depends>
+                <Mage_CatalogSearch/>
+            </depends>
         </Smartwave_CatalogCategorySearch>
     </modules>
 </config>
