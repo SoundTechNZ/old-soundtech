@@ -337,7 +337,10 @@ div.mobile-nav .sw-mobile-menu li>a span.cat-label, .menu.side-menu li>a span.ca
   overflow: hidden;
 }
 
-/* Checkout */
+/* Detail page */
+
+
+  /* Checkout */
 .opc-ajax-loader {
   display: none !important;
 }
