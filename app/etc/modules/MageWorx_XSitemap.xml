@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * MageWorx
+ * MageWorx XSitemap Extension
+ * 
+ * @category   MageWorx
+ * @package    MageWorx_XSitemap
+ * @copyright  Copyright (c) 2017 MageWorx (http://www.mageworx.com/)
+ */
+-->
+<config>
+    <modules>
+        <MageWorx_XSitemap>
+            <active>true</active>
+            <codePool>community</codePool>
+            <extension_name>Extended Sitemap</extension_name>
+            <url>https://www.mageworx.com/extended-sitemap-magento-extension.html</url>
+            <url_m2>https://www.mageworx.com/magento-2-sitemap-extension.html</url_m2>
+            <depends>
+                <MageWorx_SeoAll />
+            </depends>
+        </MageWorx_XSitemap>
+        <Mage_Sitemap>
+            <active>false</active>
+        </Mage_Sitemap>
+    </modules>
+</config>

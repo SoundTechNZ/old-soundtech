@@ -1,0 +1,95 @@
+"%s rows were successfully saved","%s rows were successfully saved"
+"
+                            <b>Reindex Catalog URL Rewrites after changing this setting.</b></br>                                    
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<b>Examples:</b><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<b>Original URLs:</b><br />  
+                                    Category:&nbsp;http://ex.com/apparel/shoes/<br />
+                                    Product:&nbsp;&nbsp;&nbsp;http://ex.com/apparel/shoes/clogs.html<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<b>Optimized URLs:</b><br />
+                                    Category:&nbsp;http://ex.com/shoes/<br />
+                                    Product:&nbsp;&nbsp;&nbsp;http://ex.com/shoes/clogs.html
+                            
+                            ","
+                            <b>Reindex Catalog URL Rewrites after changing this setting.</b></br>                                    
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<b>Examples:</b><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<b>Original URLs:</b><br />  
+                                    Category:&nbsp;http://ex.com/apparel/shoes/<br />
+                                    Product:&nbsp;&nbsp;&nbsp;http://ex.com/apparel/shoes/clogs.html<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<b>Optimized URLs:</b><br />
+                                    Category:&nbsp;http://ex.com/shoes/<br />
+                                    Product:&nbsp;&nbsp;&nbsp;http://ex.com/shoes/clogs.html
+                            
+                            "
+"<br>Most search engines use up to <strong>70</strong>.","<br>Most search engines use up to <strong>70</strong>."
+"<br>Most search engines use up to <strong>150</strong>.","<br>Most search engines use up to <strong>150</strong>."
+"Add Pager Number to<br>Meta Description
+                            ","Add Pager Number to<br>Meta Description
+                            "
+"Add Pager Number to<br>Meta Title
+                            ","Add Pager Number to<br>Meta Title
+                            "
+"Are you sure you want to do this?","Are you sure you want to do this?"
+"At the Beginning","At the Beginning"
+"At the end","At the end"
+Attribute,Attribute
+"Attribute do not exist","Attribute do not exist"
+"Category Name","Category Name"
+"Change Description","Change Description"
+"Change Meta Description","Change Meta Description"
+"Change Meta Keywords","Change Meta Keywords"
+"Change Meta Title","Change Meta Title"
+"Continue Edit","Continue Edit"
+"Disable Meta Keywords Tag ▾","Disable Meta Keywords Tag ▾"
+"Dynamic variables and randomizer are available. See the description on the SEO XTemplates Category Filter Edit Page","Dynamic variables and randomizer are available. See the description on the SEO XTemplates Category Filter Edit Page"
+"E.g. 'Apparel <b>| Page 3</b>'","E.g. 'Apparel <b>| Page 3</b>'"
+"E.g. 'Description of apparel<b> | Page 2</b>'","E.g. 'Description of apparel<b> | Page 2</b>'"
+"Edit Attribute Category","Edit Attribute Category"
+"Edit SEO for Category Filters","Edit SEO for Category Filters"
+"Enable Extended Meta Description On Category Layered Navigation Pages","Enable Extended Meta Description On Category Layered Navigation Pages"
+"Enable Extended Meta Title On Category Layered Navigation Pages","Enable Extended Meta Title On Category Layered Navigation Pages"
+"Enable SEO for Category Filters Functionality ▾","Enable SEO for Category Filters Functionality ▾"
+"For Category Filters","For Category Filters"
+"Ignore Pages","Ignore Pages"
+"MageWorx > SEO Suite","MageWorx > SEO Suite"
+"Manage SEO for Category Filters","Manage SEO for Category Filters"
+"Meta Keywords Tag will not be cropped for these pages.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;For category: 'catalog_category_view'<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;For product:  'catalog_product_view'<br>
+                                    Use <i>""Tools for SEO Suite extension"" -> ""Show Action Name of Page""</i>
+                                    to find the values for other pages.
+                            ","Meta Keywords Tag will not be cropped for these pages.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;For category: 'catalog_category_view'<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;For product:  'catalog_product_view'<br>
+                                    Use <i>""Tools for SEO Suite extension"" -> ""Show Action Name of Page""</i>
+                                    to find the values for other pages.
+                            "
+"Meta Title","Meta Title"
+"New Attribute Category","New Attribute Category"
+"New SEO for Category Filter","New SEO for Category Filter"
+"Optimized URLs For Product And Category Enabled","Optimized URLs For Product And Category Enabled"
+Page,Page
+"Please select Row(s)","Please select Row(s)"
+"RSS Feed","RSS Feed"
+"Remove Default Title Prefix/Suffix<br>for Product and Category Pages<br>
+                            ","Remove Default Title Prefix/Suffix<br>for Product and Category Pages<br>
+                            "
+"Review for","Review for"
+"Reviews for","Reviews for"
+"Row was successfully saved","Row was successfully saved"
+"SEO Extended","SEO Extended"
+"SEO Extended: Optimized URLs / Meta Title, Description, Keywords","SEO Extended: Optimized URLs / Meta Title, Description, Keywords"
+"SEO Extended Templates","SEO Extended Templates"
+"SEO Suite","SEO Suite"
+"SEO for Category Filter - Attribute Setting","SEO for Category Filter - Attribute Setting"
+"SEO for Category Filters","SEO for Category Filters"
+"Save For Each Store","Save For Each Store"
+"Save For Each Store if Empty","Save For Each Store if Empty"
+"The SEO for Category Filter(s) has been deleted","The SEO for Category Filter(s) has been deleted"
+"Unable to Find SEO for Category Filters.","Unable to Find SEO for Category Filters."
+"Use SEO-ed data for a single filter","Use SEO-ed data for a single filter"
+"When multiple filters with SEO-ed data applied, we will prioritise filters by their position in LN","When multiple filters with SEO-ed data applied, we will prioritise filters by their position in LN"
+"Yes (Ignore List Available)","Yes (Ignore List Available)"
+"Yes, if Empty Content","Yes, if Empty Content"
+"You’ve entered <span style=""font-weight:bold"">0</span> character(s).","You’ve entered <span style=""font-weight:bold"">0</span> character(s)."
+by,by
+Bulk Edit,Bulk Edit

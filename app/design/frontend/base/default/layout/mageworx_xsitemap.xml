@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageWorx
+ * MageWorx XSitemap Extension
+ * 
+ * @category   MageWorx
+ * @package    MageWorx_XSitemap
+ * @copyright  Copyright (c) 2017 MageWorx (http://www.mageworx.com/)
+ */
+ -->
+<layout version="0.1.0">
+    <default>
+        <reference name="footer_links">
+            <action method="removeLinkByUrl">
+                <url helper="catalog/map/getCategoryUrl" />
+            </action>
+            <action method="addLink" translate="label title" module="mageworx_xsitemap">
+                <label>Site Map</label>
+                <url helper="mageworx_xsitemap/data/getSitemapUrl" /><title>Site Map</title>
+            </action>
+        </reference>
+    </default>
+    <mageworx_xsitemap_index_index>
+        <reference name="head">
+            <action method="addCss">
+                <stylesheet>css/mageworx/xsitemap/xsitemap.css</stylesheet>
+            </action>
+        </reference>
+        <remove name="right"/>
+        <remove name="left"/>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="mageworx_xsitemap/container" name="mageworx_xsitemap.xsitemap.container" template="mageworx/xsitemap/container.phtml">
+                <block type="mageworx_xsitemap/store_switcher" name="mageworx_xsitemap.store_switcher" as="store_switcher" template="mageworx/xsitemap/store_switcher.phtml" />
+                <block type="mageworx_xsitemap/catalog_categories" name="mageworx_xsitemap.category_tree" as="category_tree" template="mageworx/xsitemap/catalog_categories.phtml">
+                    <block type="mageworx_xsitemap/catalog_products" name="mageworx_xsitemap.category_products" as="category_products" template="mageworx/xsitemap/catalog_products.phtml" />
+                </block>
+                <block type="mageworx_xsitemap/pages" name="mageworx_xsitemap.pages" as="pages" template="mageworx/xsitemap/pages.phtml" />
+                <block type="mageworx_xsitemap/links" name="mageworx_xsitemap.links" as="links" template="mageworx/xsitemap/links.phtml" />
+            </block>
+        </reference>
+    </mageworx_xsitemap_index_index>
+</layout>

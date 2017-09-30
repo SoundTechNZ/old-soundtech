@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageWorx
+ * MageWorx SeoBreadcrumbs Extension
+ * 
+ * @category   MageWorx
+ * @package    MageWorx_SeoBreadcrumbs
+ * @copyright  Copyright (c) 2017 MageWorx (http://www.mageworx.com/)
+ */
+-->
+<config>
+    <modules>
+        <MageWorx_SeoBreadcrumbs>
+            <active>true</active>
+            <codePool>community</codePool>
+            <extension_name>SEO Breadcrumbs</extension_name>
+            <depends>
+                <MageWorx_All />
+            </depends>
+        </MageWorx_SeoBreadcrumbs>
+    </modules>
+</config>

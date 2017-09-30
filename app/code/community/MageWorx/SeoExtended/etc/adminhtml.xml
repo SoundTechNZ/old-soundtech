@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageWorx
+ * MageWorx SeoExtended Extension
+ * 
+ * @category   MageWorx
+ * @package    MageWorx_SeoExtended
+ * @copyright  Copyright (c) 2017 MageWorx (http://www.mageworx.com/)
+ */
+ -->
+<config>
+    <menu>
+        <catalog translate="title" module="catalog">
+            <children>
+                <mageworx_seoextended_seocategory translate="title" module="mageworx_seoextended">
+                    <title>Category SEO Grid</title>
+                    <sort_order>80</sort_order>
+                    <action>adminhtml/mageworx_seoextended_catalog_seocategory</action>
+                </mageworx_seoextended_seocategory>
+                <mageworx_seoextended translate="title" module="mageworx_seoextended">
+                    <title>SEO Extended</title>
+                    <sort_order>110</sort_order>
+                    <children>
+                        <category translate="title">
+                            <title>SEO for Category Filters</title>
+                            <sort_order>5</sort_order>
+                            <action>adminhtml/mageworx_seoextended_catalog_category</action>
+                        </category>
+                        <settings translate="title">
+                            <title>Settings</title>
+                            <sort_order>10</sort_order>
+                            <action>adminhtml/system_config/edit/section/mageworx_seo/</action>
+                        </settings>
+                    </children>
+                </mageworx_seoextended>
+            </children>
+        </catalog>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <mageworx_seoextended_seocategory translate="title" module="mageworx_seoextended">
+                                <title>Category SEO Grid</title>
+                            </mageworx_seoextended_seocategory>
+                            <mageworx_seoextended translate="title" module="mageworx_seoextended">
+                                <title>SEO Extended</title>
+                                <children>
+                                    <category translate="title">
+                                        <title>SEO for Category Filters</title>
+                                        <sort_order>10</sort_order>
+                                    </category>
+                                    <settings translate="title">
+                                        <title>Settings</title>
+                                        <sort_order>30</sort_order>
+                                    </settings>
+                                </children>
+                            </mageworx_seoextended>
+                        </children>
+                    </catalog>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <mageworx_seo translate="title" module="mageworx_seoextended">
+                                        <title>MageWorx &gt; SEO Suite</title>
+                                        <sort_order>600</sort_order>
+                                        <children>                                           
+                                            <seoextended translate="title">
+                                                <title>SEO Extended</title>
+                                                <sort_order>120</sort_order>
+                                            </seoextended>                                           
+                                        </children>
+                                    </mageworx_seo>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

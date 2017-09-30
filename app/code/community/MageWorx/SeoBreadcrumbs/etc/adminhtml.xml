@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageWorx
+ * MageWorx SeoBreadcrumbs Extension
+ *
+ * @category   MageWorx
+ * @package    MageWorx_SeoBreadcrumbs
+ * @copyright  Copyright (c) 2017 MageWorx (http://www.mageworx.com/)
+ */
+ -->
+
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog translate="title" module="catalog">
+                        <children>
+                            <mageworx_seobreadcrumbs>
+                                <title>SEO Breadcrumbs</title>
+                                <children>
+                                    <category translate="title">
+                                        <title>Manage Breadcrumbs Priority for Category</title>
+                                        <sort_order>1</sort_order>
+                                    </category>
+                                    <settings translate="title">
+                                        <title>Settings</title>
+                                        <sort_order>5</sort_order>
+                                    </settings>
+                                </children>
+                            </mageworx_seobreadcrumbs>
+                        </children>
+                    </catalog>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <mageworx_seo translate="title" module="mageworx_seobreadcrumbs">
+                                        <title>MageWorx &gt; SEO Suite</title>
+                                        <sort_order>600</sort_order>
+                                        <children>
+                                            <breadcrumbs>
+                                                <title>SEO Breadcrumbs</title>
+                                                <sort_order>125</sort_order>
+                                            </breadcrumbs>
+                                        </children>
+                                    </mageworx_seo>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <menu>
+        <catalog translate="title" module="catalog">
+            <children>
+                <mageworx_seobreadcrumbs translate="title" module="mageworx_seobreadcrumbs">
+                    <title>SEO Breadcrumbs</title>
+                    <sort_order>90</sort_order>
+                    <children>
+                        <category translate="title">
+                            <title>Manage Breadcrumbs Priority for Category</title>
+                            <sort_order>1</sort_order>
+                            <action>adminhtml/mageworx_seobreadcrumbs</action>
+                        </category>
+                        <settings translate="title">
+                            <title>Settings</title>
+                            <sort_order>5</sort_order>
+                            <action>adminhtml/system_config/edit/section/mageworx_seo/</action>
+                        </settings>
+                    </children>
+                </mageworx_seobreadcrumbs>
+            </children>
+        </catalog>
+    </menu>
+</config>

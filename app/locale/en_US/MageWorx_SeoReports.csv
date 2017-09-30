@@ -1,0 +1,33 @@
+"CMS Report","CMS Report"
+"Categories Report","Categories Report"
+"Category Name","Category Name"
+Done,Done
+Generate,Generate
+Generation,Generation
+Level,Level
+Long,Long
+"Max Length for Meta Description","Max Length for Meta Description"
+"Max Length for Meta Title","Max Length for Meta Title"
+"Meta Title","Meta Title"
+Missing,Missing
+"Most search engines use up to 70.","Most search engines use up to 70."
+"Most search engines use up to 150.","Most search engines use up to 150."
+"Products Report","Products Report"
+"Recommended length up to 70 characters.","Recommended length up to 70 characters."
+"Report has been successfully generated.","Report has been successfully generated."
+"SEO Reports","SEO Reports"
+"SEO Reports') . ' - ' . Mage::helper('mageworx_seoreports","SEO Reports') . ' - ' . Mage::helper('mageworx_seoreports"
+"SEO Suite","SEO Suite"
+"Starting ""Apply %s"". <span style=""color:red"">Please do not close this window.</span>","Starting ""Apply %s"". <span style=""color:red"">Please do not close this window.</span>"
+"Starting apply product URL key template...","Starting apply product URL key template..."
+"Starting to calculate store\'s CMS data...","Starting to calculate store\'s CMS data..."
+"Starting to calculate store\'s category data...","Starting to calculate store\'s category data..."
+"Starting to calculate store\'s product data...","Starting to calculate store\'s product data..."
+"Starting to prepare data...","Starting to prepare data..."
+"Total %1$s, processed %2$s records (%3$s%%)...","Total %1$s, processed %2$s records (%3$s%%)..."
+"URL key duplicate","URL key duplicate"
+Url,Url
+"Url Key","Url Key"
+"View Duplicates","View Duplicates"
+"You need to generate the report due to recent changes.","You need to generate the report due to recent changes."
+"You’ve entered <span>0</span> character(s).","You’ve entered <span>0</span> character(s)."

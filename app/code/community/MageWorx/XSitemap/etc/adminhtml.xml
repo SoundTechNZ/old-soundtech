@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+    <menu>
+        <catalog>
+            <children>
+                <mageworx_xsitemap translate="title" module="mageworx_xsitemap">
+                    <title>Google Sitemap (Extended)</title>
+                    <sort_order>180</sort_order>
+                    <children>
+                        <generate translate="title">
+                            <title>Generate</title>
+                            <sort_order>1</sort_order>
+                            <action>adminhtml/mageworx_xsitemap</action>
+                        </generate>
+                        <settings translate="title">
+                            <title>Settings</title>
+                            <sort_order>2</sort_order>
+                            <action>adminhtml/system_config/edit/section/mageworx_seo/</action>
+                        </settings>
+                    </children>
+                </mageworx_xsitemap>
+            </children>
+        </catalog>
+    </menu>
+    <acl>
+    <resources>
+        <admin>
+            <children>
+                <catalog>
+                    <children>
+                        <mageworx_xsitemap translate="title" module="mageworx_xsitemap">
+                            <title>Google Sitemap (Extended)</title>
+                            <children>
+                                <generate translate="title">
+                                    <title>Generate</title>
+                                </generate>
+                                <settings translate="title">
+                                    <title>Settings</title>
+                                </settings>
+                            </children>
+                        </mageworx_xsitemap>
+                    </children>
+                </catalog>
+                <system>
+                    <children>
+                        <config>
+                            <children>
+                                <mageworx_seo translate="title" module="mageworx_xsitemap">
+                                    <title>MageWorx &gt; SEO Suite Ultimate</title>
+                                    <sort_order>100</sort_order>
+                                    <children>
+                                        <xsitemap>
+                                            <title>Extended HTML Sitemap</title>
+                                            <sort_order>160</sort_order>
+                                        </xsitemap>
+                                        <google_sitemap>
+                                            <title>Extended XML Sitemap (Google, Yahoo, Bing)</title>
+                                            <sort_order>170</sort_order>
+                                        </google_sitemap>
+                                    </children>
+                                </mageworx_seo>
+                            </children>
+                        </config>
+                    </children>
+                </system>
+            </children>
+        </admin>
+    </resources>
+    </acl>
+</config>

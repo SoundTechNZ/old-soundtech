@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageWorx
+ * MageWorx SeoXTemplates Extension
+ *
+ * @category   MageWorx
+ * @package    MageWorx_SeoXTemplates
+ * @copyright  Copyright (c) 2017 MageWorx (http://www.mageworx.com/)
+ */
+-->
+<layout>
+    <adminhtml_system_config_edit>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/mageworx/seoall/field.css</name>
+            </action>
+        </reference>
+    </adminhtml_system_config_edit>
+</layout>

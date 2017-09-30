@@ -1,0 +1,20 @@
+/**
+ * MageWorx
+ * MageWorx SeoAll Extension
+ *
+ * @category   MageWorx
+ * @package    MageWorx_SeoAll
+ * @copyright  Copyright (c) 2017 MageWorx (http://www.mageworx.com/)
+ */
+
+tr .indent_1 td label{
+    margin-left:12px !important;
+}
+
+tr .indent_2 td label{
+    margin-left:24px !important;
+}
+
+tr .indent_3 td label{
+    margin-left:32px !important;
+}

@@ -1,0 +1,24 @@
+"Category Layered Navigation SEO-Friendly URLs ▾ ","Category Layered Navigation SEO-Friendly URLs ▾ "
+"Hide Attribute Names","Hide Attribute Names"
+"Hide Attribute Names in Layered Navigation URLs when possible.","Hide Attribute Names in Layered Navigation URLs when possible."
+"If empty, "" : "" is used,<br>E.g. http://example.com/computers/l/price<b>:</b>700-800","If empty, "" : "" is used,<br>E.g. http://example.com/computers/l/price<b>:</b>700-800"
+"If empty, "" l "" is used,<br>E.g. http://example.com/apparel/<b>l</b>/price:100-200","If empty, "" l "" is used,<br>E.g. http://example.com/apparel/<b>l</b>/price:100-200"
+"If empty, the original URL format is used:<br/>/mobile-phones.html?p=2
+                                     <br/><b>Examples:</b>
+                                     <br/>-page[page_number] &nbsp;&nbsp; <i>will transform URL into</i>
+                                     <br/>/mobile-phones-page2.html<br/>/p/[page_number] &nbsp;&nbsp; <i>will transform URL into</i>
+                                     <br/>/mobile-phones/p/2.html
+                                     <br/>-[page_number] &nbsp; <b>It is not recommended if categories or layered navigation filters end in ""-[0-9]"":</b>
+                                     <br/>/laptop-series-3.html, /phones-60.html, etc.</br></br>","If empty, the original URL format is used:<br/>/mobile-phones.html?p=2
+                                     <br/><b>Examples:</b>
+                                     <br/>-page[page_number] &nbsp;&nbsp; <i>will transform URL into</i>
+                                     <br/>/mobile-phones-page2.html<br/>/p/[page_number] &nbsp;&nbsp; <i>will transform URL into</i>
+                                     <br/>/mobile-phones/p/2.html
+                                     <br/>-[page_number] &nbsp; <b>It is not recommended if categories or layered navigation filters end in ""-[0-9]"":</b>
+                                     <br/>/laptop-series-3.html, /phones-60.html, etc.</br></br>"
+"Layered NavigationSeparator","Layered NavigationSeparator"
+"MageWorx > SEO Suite Ultimate","MageWorx > SEO Suite Ultimate"
+"Navigation Identifier","Navigation Identifier"
+"Pager URL Format for Categories","Pager URL Format for Categories"
+"SEO Friendly LN URLs","SEO Friendly LN URLs"
+"SEO Suite","SEO Suite"

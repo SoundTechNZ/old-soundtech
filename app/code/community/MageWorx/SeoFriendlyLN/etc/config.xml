@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageWorx
+ * MageWorx SeoFriendlyLN Extension
+ * 
+ * @category   MageWorx
+ * @package    MageWorx_SeoFriendlyLN
+ * @copyright  Copyright (c) 2017 MageWorx (http://www.mageworx.com/)
+ */
+ -->
+<config>
+    <modules>
+        <MageWorx_SeoFriendlyLN>
+            <version>3.15.10</version>
+        </MageWorx_SeoFriendlyLN>
+    </modules>    
+    <global>
+        <models>
+            <mageworx_seofriendlyln>
+                <class>MageWorx_SeoFriendlyLN_Model</class>
+                <resourceModel>mageworx_seofriendlyln_resource</resourceModel>
+            </mageworx_seofriendlyln>
+            <mageworx_seofriendlyln_resource>
+                <class>MageWorx_SeoFriendlyLN_Model_Resource</class>
+            </mageworx_seofriendlyln_resource>
+            <catalog>                
+                <rewrite>
+                    <layer_filter_item>MageWorx_SeoFriendlyLN_Model_Catalog_Layer_Filter_Item</layer_filter_item>
+                    <layer_filter_attribute>MageWorx_SeoFriendlyLN_Model_Catalog_Layer_Filter_Attribute</layer_filter_attribute>                    
+                </rewrite>
+            </catalog>          
+        </models>
+        <resources>
+            <mageworx_seofriendlyln_setup>
+                <setup>
+                    <module>MageWorx_SeoFriendlyLN</module>
+                </setup>
+            </mageworx_seofriendlyln_setup>
+        </resources>
+        <blocks>
+            <mageworx_seofriendlyln>
+                <class>MageWorx_SeoFriendlyLN_Block</class>
+            </mageworx_seofriendlyln>
+            <catalog>
+                <rewrite>                                  
+                    <layer_state>MageWorx_SeoFriendlyLN_Block_Catalog_Layer_State</layer_state>
+                    <product_list_toolbar>MageWorx_SeoFriendlyLN_Block_Catalog_Product_List_Toolbar</product_list_toolbar>
+                </rewrite>
+            </catalog>           
+            <page>
+                <rewrite>
+                    <html_pager>MageWorx_SeoFriendlyLN_Block_Page_Html_Pager</html_pager>
+                </rewrite>
+            </page>           
+        </blocks>
+        <helpers>
+            <mageworx_seofriendlyln>
+                <class>MageWorx_SeoFriendlyLN_Helper</class>
+            </mageworx_seofriendlyln>
+        </helpers>
+        <events>
+            <controller_front_init_routers>
+                <observers>
+                    <mageworx_seofriendlyln_add_router>
+                        <type>singleton</type>
+                        <class>MageWorx_SeoFriendlyLN_Controller_Router</class>
+                        <method>initControllerRouters</method>
+                    </mageworx_seofriendlyln_add_router>
+                </observers>
+            </controller_front_init_routers>
+            <controller_action_predispatch_catalog>
+                <observers>
+                    <mageworx_seofriendlyln_parse_params>
+                        <type>singleton</type>
+                        <class>MageWorx_SeoFriendlyLN_Controller_Router</class>
+                        <method>parseLayeredParams</method>
+                    </mageworx_seofriendlyln_parse_params>
+                </observers>
+            </controller_action_predispatch_catalog>           
+        </events>
+    </global>
+    <adminhtml>        
+        <translate>
+            <modules>
+                <MageWorx_SeoFriendlyLN>
+                    <files>
+                        <default>MageWorx_SeoFriendlyLN.csv</default>
+                    </files>
+                </MageWorx_SeoFriendlyLN>
+            </modules>
+        </translate>         
+    </adminhtml>
+    <default>
+        <mageworx_seo>
+            <seofriendlyln>
+                <enable_ln_friendly_urls>1</enable_ln_friendly_urls>
+                <layered_hide_attributes>1</layered_hide_attributes>
+                <layered_identifier>l</layered_identifier>
+                <layered_separatort>:</layered_separatort>                          
+            </seofriendlyln>           
+        </mageworx_seo>
+    </default>
+</config>

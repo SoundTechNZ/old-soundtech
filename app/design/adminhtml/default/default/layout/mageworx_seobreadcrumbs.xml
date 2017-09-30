@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageWorx
+ * MageWorx SeoBreadcrumbs Extension
+ *
+ * @category   MageWorx
+ * @package    MageWorx_SeoBreadcrumbs
+ * @copyright  Copyright (c) 2017 MageWorx (http://www.mageworx.com/)
+ */
+-->
+<layout>
+    <adminhtml_mageworx_seobreadcrumbs_index>
+        <reference name="js">
+            <block type="core/template" template="mageworx/seobreadcrumbs/inline-edit.phtml" />
+        </reference>
+        <reference name="content">
+            <block type="mageworx_seobreadcrumbs/adminhtml_breadcrumbs" name="breadcrumbs.grid_container" />
+        </reference>
+    </adminhtml_mageworx_seobreadcrumbs_index>
+</layout>

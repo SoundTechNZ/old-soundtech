@@ -1,0 +1,50 @@
+User-agent: *
+
+# Directories
+Disallow: /404/
+Disallow: /app/
+Disallow: /cgi-bin/
+Disallow: /downloader/
+Disallow: /errors/
+Disallow: /includes/
+Disallow: /lib/
+Disallow: /magento/
+Disallow: /media/captcha/
+
+# Paths (clean URLs)
+Disallow: /index.php/
+Disallow: /catalog/product_compare/
+Disallow: /catalog/category/view/
+Disallow: /catalog/product/view/
+Disallow: /catalog/product/gallery/
+Disallow: /catalogsearch/
+Disallow: /checkout/
+Disallow: /control/
+Disallow: /customer/
+Disallow: /customize/
+Disallow: /sendfriend/
+Disallow: /ajaxcart/
+Disallow: /ajax/
+Disallow: /quickview/
+Disallow: /productalert/
+Disallow: /sales/guest/form/
+
+# Files
+Disallow: /cron.php
+Disallow: /cron.sh
+Disallow: /error_log
+Disallow: /install.php
+Disallow: /LICENSE.html
+Disallow: /LICENSE.txt
+Disallow: /LICENSE_AFL.txt
+Disallow: /STATUS.txt
+Disallow: /get.php
+
+# Paths (no clean URLs)
+Disallow: /*.php$
+Disallow: /*?SID=
+Disallow: /*PHPSESSID
+
+Sitemap: http://www.soundtech.co.nz/sitemap.xml
+
+Host: http://www.soundtech.co.nz/

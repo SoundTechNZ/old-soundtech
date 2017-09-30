@@ -1,0 +1,24 @@
+<?php
+/**
+ * MageWorx
+ * MageWorx SeoBreadcrumbs Extension
+ *
+ * @category   MageWorx
+ * @package    MageWorx_SeoBreadcrumbs
+ * @copyright  Copyright (c) 2017 MageWorx (http://www.mageworx.com/)
+ */
+?>
+<script type="text/javascript">
+    function updatePriority(button, fieldId)
+    {
+        new Ajax.Request('<?php
+            echo Mage::helper('adminhtml')->getUrl('*/*/updatePriority') ?>', {
+                method: 'post',
+                parameters: {
+                 id: fieldId,
+                 breadcrumbs_priority: $(button).previous('input').getValue(),
+                 store: <?php echo Mage::app()->getStore(true)->getId();?>
+            }
+        });
+    }
+ </script>

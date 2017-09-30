@@ -1,0 +1,129 @@
+,
+"%s - Discounts and Coupons","%s - Discounts and Coupons"
+"%s - Special Discounts","%s - Special Discounts"
+"Adaptive Meta Robots by '?limit=' Parameter","Adaptive Meta Robots by '?limit=' Parameter"
+"Add Canonical URL<br>Meta Header ▾","Add Canonical URL<br>Meta Header ▾"
+"Add Link Rel=""next/prev""","Add Link Rel=""next/prev"""
+"Alternate Hreflang ▾","Alternate Hreflang ▾"
+"Black List","Black List"
+"By Hreflang Key","By Hreflang Key"
+"By ID","By ID"
+"By URL Key","By URL Key"
+"CMS Page Canonical URL Settings","CMS Page Canonical URL Settings"
+"Can be either a full action name or a request path. Wildcard allowed<br/>
+                                    <b>Examples</b>:<br/>&nbsp;&nbsp;&nbsp;&nbsp;review_product_*<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;review/product/*<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;rss_*<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;rss/*<br>
+                                    The values for other pages you can find out using ""Tools for SEO Suite extension"" -><br>
+                                    ""Show Action Name of Page"".
+                            ","Can be either a full action name or a request path. Wildcard allowed<br/>
+                                    <b>Examples</b>:<br/>&nbsp;&nbsp;&nbsp;&nbsp;review_product_*<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;review/product/*<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;rss_*<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;rss/*<br>
+                                    The values for other pages you can find out using ""Tools for SEO Suite extension"" -><br>
+                                    ""Show Action Name of Page"".
+                            "
+"Can be either a full action name or a request path. Wildcard allowed<br/><b>Examples</b>:<br/>review_product_*<br/>review/product/*<br/>rss_*<br/>rss/*","Can be either a full action name or a request path. Wildcard allowed<br/><b>Examples</b>:<br/>review_product_*<br/>review/product/*<br/>rss_*<br/>rss/*"
+"Canonical Tag for Associated Products ▾","Canonical Tag for Associated Products ▾"
+"Canonical Tag for Category Layered Navigation","Canonical Tag for Category Layered Navigation"
+"Canonical Tag for Pages Filtered by Layered Navigation Leads to","Canonical Tag for Pages Filtered by Layered Navigation Leads to"
+"Canonical URL","Canonical URL"
+"Canonical URL Meta Header will not be added for these pages.<br>                                    
+                                    &nbsp;&nbsp;&nbsp;&nbsp;For category: 'catalog_category_view'<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;For product:  'catalog_product_view'<br>
+                                    Use <i>""Tools for SEO Suite extension"" -> ""Show Action Name of Page""</i>
+                                    to find the values for other pages.
+                            ","Canonical URL Meta Header will not be added for these pages.<br>                                    
+                                    &nbsp;&nbsp;&nbsp;&nbsp;For category: 'catalog_category_view'<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;For product:  'catalog_product_view'<br>
+                                    Use <i>""Tools for SEO Suite extension"" -> ""Show Action Name of Page""</i>
+                                    to find the values for other pages.
+                            "
+"Category Canonical URL Settings","Category Canonical URL Settings"
+"Checkout Pages","Checkout Pages"
+"Common Canonical URL Settings","Common Canonical URL Settings"
+"Contact Us Page","Contact Us Page"
+Coupons/Discounts,Coupons/Discounts
+"Cross Domain Canonical URL","Cross Domain Canonical URL"
+"Current Category","Current Category"
+"Customer Account Pages","Customer Account Pages"
+Disable,Disable
+"Enabled for CMS pages","Enabled for CMS pages"
+"Enabled for Category","Enabled for Category"
+"Enabled for Product","Enabled for Product"
+"Filtered Page","Filtered Page"
+"For Attributes Combinations","For Attributes Combinations"
+"For Bundle Products","For Bundle Products"
+"For Configurable Products","For Configurable Products"
+"For Grouped Products","For Grouped Products"
+"Hreflang Key","Hreflang Key"
+"Hreflang URLs Scope","Hreflang URLs Scope"
+"Ignore Pages","Ignore Pages"
+"List of GET Params","List of GET Params"
+"MageWorx > SEO Suite","MageWorx > SEO Suite"
+"Meta Robots Settings","Meta Robots Settings"
+"Meta Robots settings for attribute or attributes combinations in layered navigation. All existing meta robots values are available.
+                                    <br/><b>Examples</b>:
+                                    <br/>index,follow:color - it sets the INDEX,FOLLOW meta robot tag when ‘color’ attribute is selected;
+                                    <br/>index,follow: color,brand - it sets the INDEX,FOLLOW meta robot tag when ‘color’ or ‘brand’ attributes are selected;
+                                    <br/>noindex,follow:color+brand - it sets the NOINDEX,FOLLOW meta robot tag when both ‘color’ and ‘brand’ attributes are selected at the same time.                            ","Meta Robots settings for attribute or attributes combinations in layered navigation. All existing meta robots values are available.
+                                    <br/><b>Examples</b>:
+                                    <br/>index,follow:color - it sets the INDEX,FOLLOW meta robot tag when ‘color’ attribute is selected;
+                                    <br/>index,follow: color,brand - it sets the INDEX,FOLLOW meta robot tag when ‘color’ or ‘brand’ attributes are selected;
+                                    <br/>noindex,follow:color+brand - it sets the NOINDEX,FOLLOW meta robot tag when both ‘color’ and ‘brand’ attributes are selected at the same time.                            "
+"Multi-stores CMS pages relation","Multi-stores CMS pages relation"
+"NOINDEX, FOLLOW Robots Meta Header For Additional Pages","NOINDEX, FOLLOW Robots Meta Header For Additional Pages"
+"NOINDEX, FOLLOW Robots Meta Header For Pages Without Content","NOINDEX, FOLLOW Robots Meta Header For Pages Without Content"
+"NOINDEX, NOFOLLOW Robots Meta Header For Additional Pages","NOINDEX, NOFOLLOW Robots Meta Header For Additional Pages"
+"New Products from %s","New Products from %s"
+"Next/Prev Link Rel Settings","Next/Prev Link Rel Settings"
+"Other Settings","Other Settings"
+"Overview of Alternate Hreflang Settings","Overview of Alternate Hreflang Settings"
+"Parent Product","Parent Product"
+"Product Canonical URL","Product Canonical URL"
+"Product Canonical URL Settings","Product Canonical URL Settings"
+"Product Compare Pages","Product Compare Pages"
+"Product Review Pages","Product Review Pages"
+"Product Reviews Friendly URLs","Product Reviews Friendly URLs"
+"RSS Feeds","RSS Feeds"
+"Robots.txt Editor","Robots.txt Editor"
+"Robots.txt file should be granted 666 permissions.","Robots.txt file should be granted 666 permissions."
+"Robots Meta Header for HTTPS","Robots Meta Header for HTTPS"
+"SEO Base: Alternate Hreflang URLs","SEO Base: Alternate Hreflang URLs"
+"SEO Base: Canonical URLs, Meta Robots and Next/Prev Link Rel Settings","SEO Base: Canonical URLs, Meta Robots and Next/Prev Link Rel Settings"
+"SEO Suite","SEO Suite"
+"Search Pages","Search Pages"
+"Select Country Code","Select Country Code"
+"Select Language Code","Select Language Code"
+"Send Product Pages","Send Product Pages"
+"Show Action Name of Page","Show Action Name of Page"
+"Show in Source Code of Page","Show in Source Code of Page"
+"Special/Discount Products","Special/Discount Products"
+"Switch to Store View Scope to set a canonical tag manually","Switch to Store View Scope to set a canonical tag manually"
+"Tag Pages","Tag Pages"
+"The options depend on the ""Use Categories Path for Product URLs"" setting.","The options depend on the ""Use Categories Path for Product URLs"" setting."
+"The options depend on the ""Use Categories Path for Product URLs"" setting. Currently, only the ""Use Root"" option is available.","The options depend on the ""Use Categories Path for Product URLs"" setting. Currently, only the ""Use Root"" option is available."
+"This setting is disabled. You can enable it in <br><i>SEO Suite -> SEO Alternate URLs</i> config section.","This setting is disabled. You can enable it in <br><i>SEO Suite -> SEO Alternate URLs</i> config section."
+"This setting works. You can see other options in <br><i>SEO Suite -> SEO Alternate URLs</i> config section.","This setting works. You can see other options in <br><i>SEO Suite -> SEO Alternate URLs</i> config section."
+"Tools for SEO Suite extension","Tools for SEO Suite extension"
+"Type of Params List","Type of Params List"
+"URL / Canonical URL Settings","URL / Canonical URL Settings"
+"URLs by Categories Counter","URLs by Categories Counter"
+"URLs by Path Length","URLs by Path Length"
+"Use '?limit=all' Parameter in Canonical URL ▾","Use '?limit=all' Parameter in Canonical URL ▾"
+"Use Config","Use Config"
+"Use Current CMS Page URL","Use Current CMS Page URL"
+"Use Custom","Use Custom"
+"Use Default","Use Default"
+"Use Language Code from Default Locale ▾","Use Language Code from Default Locale ▾"
+"Use Longest","Use Longest"
+"Use Pager Parameter in Canonical URL","Use Pager Parameter in Canonical URL"
+"Use Root","Use Root"
+"Use Root CMS Page URL","Use Root CMS Page URL"
+"Use Shortest","Use Shortest"
+"White List","White List"
+"Wishlist Pages","Wishlist Pages"
+X-default,X-default
+"Yes, except filtered pages of the layered navigation","Yes, except filtered pages of the layered navigation"
