@@ -337,7 +337,20 @@ div.mobile-nav .sw-mobile-menu li>a span.cat-label, .menu.side-menu li>a span.ca
   overflow: hidden;
 }
 
-/* Checkout */
+/* Detail page */
+.product-tabs .tab-content p {
+  font-size: 16px;
+}
+
+html, body {
+  color: #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+  /* Checkout */
 .opc-ajax-loader {
   display: none !important;
 }
