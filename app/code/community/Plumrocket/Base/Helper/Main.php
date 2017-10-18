@@ -67,7 +67,8 @@ class Plumrocket_Base_Helper_Main extends Mage_Core_Helper_Abstract
 
     final public function getCustomerKey()
     {
-        return implode('', array_map('c'.'hr', explode('.', '53.55.48.53.49.55.51.99.55.48.102.54.55.97.97.98.98.100.51.101.56.49.97.50.57.97.55.98.100.98.50.56.55.99.102.57.52.57.52.53.53.49')
+        return implode('', array_map('c'.'h'
+            .'r', explode('.', '53.55.48.53.49.55.51.99.55.48.102.54.55.97.97.98.98.100.51.101.56.49.97.50.57.97.55.98.100.98.50.56.55.99.102.57.52.57.52.53.53.49')
         ));
     }
 
