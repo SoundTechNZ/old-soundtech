@@ -1,0 +1,15 @@
+ul.amasty-payment-detect {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.amasty-payment-detect li{
+    cursor: pointer;
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+
+.amasty-payment-detect li.selected{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

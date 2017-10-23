@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_PaymentDetect
+ */
+-->
+<config>
+    <modules>
+        <Amasty_PaymentDetect>
+            <version>1.0.1</version>
+        </Amasty_PaymentDetect>
+    </modules>
+    <global>
+        <blocks>
+            <amasty_paymentdetect>
+                <class>Amasty_PaymentDetect_Block</class>
+            </amasty_paymentdetect>
+        </blocks>
+        <models>
+            <amasty_paymentdetect>
+                <class>Amasty_PaymentDetect_Model</class>
+            </amasty_paymentdetect>
+        </models>
+        <helpers>
+            <amasty_paymentdetect>
+                <class>Amasty_PaymentDetect_Helper</class>
+            </amasty_paymentdetect>
+        </helpers>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <amasty_paymentdetect module="Amasty_PaymentDetect">
+                    <file>amasty/ampaymentdetect/ampaymentdetect.xml</file>
+                </amasty_paymentdetect>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <amasty_paymentdetect>
+            <card_type>
+                <hide_dropdown>1</hide_dropdown>
+                <show_icons>1</show_icons>
+                <icon_width>70</icon_width>
+            </card_type>
+            <visa>
+                <icon>visa.png</icon>
+                <title>Visa</title>
+                <order>10</order>
+            </visa>
+            <amex>
+                <icon>amex.png</icon>
+                <title>American Express</title>
+                <order>20</order>
+            </amex>
+            <mastercard>
+                <icon>mastercard.png</icon>
+                <title>Mastercard</title>
+                <order>30</order>
+            </mastercard>
+            <discover>
+                <icon>discover.png</icon>
+                <title>Discover</title>
+                <order>40</order>
+            </discover>
+            <jcb>
+                <icon>jcb.png</icon>
+                <title>JCB</title>
+                <order>50</order>
+            </jcb>
+            <maestro>
+                <icon>maestro.png</icon>
+                <title>Maestro</title>
+                <order>60</order>
+            </maestro>
+        </amasty_paymentdetect>
+    </default>
+</config>

@@ -1,0 +1,23 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Scheckout
+ */
+?>
+<?php $helperCf = $this->helper('amscheckout/customfield');?>
+<?php $fields   = $this->getFields(); ?>
+
+<strong><?php echo $this->getAreaFieldsLabel() . ' ' . $this->__('Custom Fields'); ?></strong>
+<?php foreach ($fields as $field): ?>
+    <?php $nameWithoutArea = $helperCf->getPartCustomFieldsName($field->getFieldKey(), $this->getCFArea(), 'className'); ?>
+    <?php if ($helperCf->isFieldEnabled($nameWithoutArea, $this->getCFArea())):?>
+    <div class="field">
+        <label for="<?php echo $nameWithoutArea?>" class="<?php if ($field->getFieldRequired()):?> required-entry <?php endif; ?>"><?php echo $field->getFieldLabel();?></label>
+        <div class="input-box">
+            <?php $value = $this->getDefaultValueField($field->getFieldKey()); ?>
+            <input type="text" id="<?php echo $nameWithoutArea ?>" name="<?php echo $nameWithoutArea; ?>" class="<?php echo $nameWithoutArea?>" title="<?php echo $field->getFieldLabel(); ?>" class="input-text <?php if ($field->getFieldRequired()):?> required-entry <?php endif; ?>" value="<?php echo $value; ?>"/>
+        </div>
+    </div>
+    <?php endif; ?>
+<?php endforeach; ?>

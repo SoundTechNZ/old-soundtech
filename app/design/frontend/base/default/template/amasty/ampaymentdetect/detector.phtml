@@ -1,0 +1,23 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_PaymentDetect
+ */
+?>
+<?php /** @var Amasty_PaymentDetect_Block_Detector $this */?>
+<?php /** @var Amasty_PaymentDetect_Helper_Data $helper */?>
+<?php $helper = $this->helper('amasty_paymentdetect'); ?>
+<script>
+    var amastyPaymentDetector = new AmastyPaymentDetector(
+        <?php echo Zend_Json::encode($this->getIcons()) ?>,
+        <?php echo Zend_Json::encode($this->getTitles()) ?>,
+        <?php echo Zend_Json::encode($this->getOrders()) ?>,
+        <?php echo Zend_Json::encode($this->getModules()) ?>,
+        {
+            hideDropdown: <?php echo $helper->hideDropdown()?>,
+            showIcons: <?php echo $helper->showIcons()?>,
+            iconWidth: <?php echo $helper->getIconWidth()?>
+        }
+    );
+</script>

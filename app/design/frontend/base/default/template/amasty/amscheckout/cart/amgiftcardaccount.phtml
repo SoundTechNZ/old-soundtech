@@ -1,0 +1,82 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Scheckout
+ */
+?>
+<?php
+    $hlr = $this->helper("amscheckout");
+?>
+<div>
+    <div>
+        <label class="giftcard_code" for="amgiftcard_code"><?php echo $this->__('Enter the gift card code') ?></label>
+        <span id="amgc-please-wait" class="please-wait" style="display:none;">
+                <img src="<?php echo $this->getSkinUrl('images/opc-ajax-loader.gif') ?>" alt="" class="v-middle" /> <?php echo $this->__('Please wait, loading...') ?>
+        </span>
+        <div>
+            <div id="amgiftcard_balance_lookup"></div>
+            <input type="text" class="input-text"  id="amgiftcard_code" name="amgiftcard_code" value="" />
+            <a href="#" class="giftcard-code-check" onclick="checkAmGiftCardStatus(); return false;"><?php echo $this->__('Check Gift Card status and balance') ?></a>
+            <div class="coupon-buttons">
+                <button class="amscheckout-apply" onclick="amgiftcardSubmit()" type="button" value="<?php echo $this->__('Apply') ?>"><span><span><?php echo $this->__('Apply') ?></span></span></button>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    //<![CDATA[
+    function amgiftcardSubmit(){
+        showLoading();
+        ajaxUpdate('<?php print $hlr->getAmGiftCartUrl();?>', function(config){
+            if (config.html && config.html.amgiftcard) {
+
+                if (config.html.amgiftcard.output) {
+                    $('checkout-amgiftcards').update(config.html.amgiftcard.output);
+                }
+
+                $('amgiftcard_balance_lookup').innerHTML = config.html.amgiftcard.message;
+            }
+
+            quoteBaseGrandTotal = config.baseGrandTotal;
+
+            hideLoading();
+        });
+    }
+
+    function checkAmGiftCardStatus()
+    {
+        new Ajax.Updater(
+            'amgiftcard_balance_lookup',
+            '<?php echo Mage::getUrl('amgiftcard/cart/ajax', array('_secure' => true)) ?>',
+            {
+                onCreate: function() { $('amgc-please-wait').show(); },
+                onComplete: function() { $('amgc-please-wait').hide(); },
+                parameters : {code : $('amgiftcard_code').value}
+            }
+        );
+    }
+
+    function amgiftcardCancel(code){
+            showLoading();
+            ajaxUpdate('<?php print $hlr->getAmGiftCartCancelUrl();?>', function(config){
+                if (config.html && config.html.amgiftcard) {
+
+                    if (config.html.amgiftcard.output && $('amcheckout-giftcards')) {
+                        $('checkout-amgiftcards').update(config.html.amgiftcard.output);
+                    }
+
+                    if ($('amgiftcard_balance_lookup'))
+                        $('amgiftcard_balance_lookup').innerHTML = config.html.amgiftcard.message;
+                }
+
+                hideLoading();
+            }, {'code': code});
+    }
+
+    //]]>
+</script>

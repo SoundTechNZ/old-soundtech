@@ -1,0 +1,61 @@
+.cart-collaterals{
+    display: none;
+}
+
+.amscheckout-main{
+    margin-top: 20px;
+}
+
+/*label.amscheckout-label-guest-checkout {
+    display:none;
+}*/
+
+.amasty-scheckout-label-notifications {
+    padding: 10px 0 10px 0;
+}
+
+/*.amasty-scheckout-login-buttons {
+    margin-top:5px;
+}
+
+.amscheckout-tab-guest-checkout, .amscheckout-tab-login {
+    width:40%;
+}*/
+
+.amscheckout-tab-guest-checkout, .amscheckout-tab-login {
+    opacity: 0.3;
+}
+
+.amasty-scheckout-login-buttons .tabs_title {
+    list-style: none;
+    position: relative;
+    z-index: 2;
+    padding: 0px;
+}
+
+.amasty-scheckout-login-buttons li.item {
+    margin: 0px -1px 0 0;
+    border: 1px solid #c1c1c1;
+    float: left;
+}
+
+.amasty-scheckout-login-buttons .tabs_title li a {
+    display: block;
+    padding: 4px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.amasty-scheckout-login-buttons .tabs_title li.active {
+    opacity: 1;
+}
+
+.amasty-scheckout-login-buttons .tabs_title li.active a {
+    display: block;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+
+
