@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_PaymentDetect
+ */
+-->
+<config>
+    <sections>
+        <amasty_paymentdetect translate="label" module="amasty_paymentdetect">
+            <label>Credit Card Detector</label>
+            <tab>amasty</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>021701</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <card_type translate="label">
+                    <label>Card Type</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <hide_dropdown translate="label">
+                            <label>Hide dropdown</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </hide_dropdown>
+                        <show_icons translate="label">
+                            <label>Show icons</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </show_icons>
+                        <icon_width translate="label">
+                            <label>Icon width (px)</label>
+                            <frontend_class>validate-number</frontend_class>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <show_icons>1</show_icons>
+                            </depends>
+                        </icon_width>
+                    </fields>
+                </card_type>
+                <visa>
+                    <label>Visa</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <icon translate="label">
+                            <label>Icon</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>amasty_paymentdetect/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">amasty/paymentdetect/logo</upload_dir>
+                            <base_url type="media" scope_info="1">amasty/paymentdetect/logo</base_url>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </icon>
+                        <title translate="label">
+                            <label>Title</label>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <order translate="label">
+                            <label>Order</label>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_class>validate-number</frontend_class>
+                        </order>
+                    </fields>
+                </visa>
+                <amex>
+                    <label>American Express</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <icon translate="label">
+                            <label>Icon</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>amasty_paymentdetect/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">amasty/paymentdetect/logo</upload_dir>
+                            <base_url type="media" scope_info="1">amasty/paymentdetect/logo</base_url>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </icon>
+                        <title translate="label">
+                            <label>Title</label>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <order translate="label">
+                            <label>Order</label>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_class>validate-number</frontend_class>
+                        </order>
+                    </fields>
+                </amex>
+                <mastercard>
+                    <label>Mastercard</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <icon translate="label">
+                            <label>Icon</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>amasty_paymentdetect/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">amasty/paymentdetect/logo</upload_dir>
+                            <base_url type="media" scope_info="1">amasty/paymentdetect/logo</base_url>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </icon>
+                        <title translate="label">
+                            <label>Title</label>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <order translate="label">
+                            <label>Order</label>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_class>validate-number</frontend_class>
+                        </order>
+                    </fields>
+                </mastercard>
+                <discover>
+                    <label>Discover</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <icon translate="label">
+                            <label>Icon</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>amasty_paymentdetect/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">amasty/paymentdetect/logo</upload_dir>
+                            <base_url type="media" scope_info="1">amasty/paymentdetect/logo</base_url>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </icon>
+                        <title translate="label">
+                            <label>Title</label>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <order translate="label">
+                            <label>Order</label>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_class>validate-number</frontend_class>
+                        </order>
+                    </fields>
+                </discover>
+                <jcb>
+                    <label>JCB</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>60</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <icon translate="label">
+                            <label>Icon</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>amasty_paymentdetect/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">amasty/paymentdetect/logo</upload_dir>
+                            <base_url type="media" scope_info="1">amasty/paymentdetect/logo</base_url>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </icon>
+                        <title translate="label">
+                            <label>Title</label>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <order translate="label">
+                            <label>Order</label>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_class>validate-number</frontend_class>
+                        </order>
+                    </fields>
+                </jcb>
+                <maestro>
+                    <label>Maestro</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>70</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <icon translate="label">
+                            <label>Icon</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>amasty_paymentdetect/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">amasty/paymentdetect/logo</upload_dir>
+                            <base_url type="media" scope_info="1">amasty/paymentdetect/logo</base_url>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </icon>
+                        <title translate="label">
+                            <label>Title</label>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <order translate="label">
+                            <label>Order</label>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <frontend_class>validate-number</frontend_class>
+                        </order>
+                    </fields>
+                </maestro>
+            </groups>
+        </amasty_paymentdetect>
+    </sections>
+</config>

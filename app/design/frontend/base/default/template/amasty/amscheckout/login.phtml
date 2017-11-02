@@ -1,0 +1,94 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_Scheckout
+ */
+?>
+<?php /** @var Amasty_Scheckout_Block_Login $this */?>
+<div class="amscheckout">
+    <div class="amasty-scheckout-login" id="amasty-scheckout-login">
+        <?php if ($this->isAllowGuestCheckout()): ?>
+        <div class="amasty-scheckout-login-buttons">
+            <ul class="tabs_title">
+                <li id="amasty-scheckout-guest-checkout" class="item amscheckout-tab-guest-checkout amscheckout-img">
+                    <a href="javascript:void(0)"><?php echo $this->__('Checkout as guest') ?></a>
+                </li>
+                <li id="amasty-scheckout-login-account" class="item amscheckout-tab-login amscheckout-img">
+                    <a href="javascript:void(0)"><?php echo $this->__('Log in to your account') ?></a>
+                </li>
+            </ul>
+            <br/>
+            <div class="amasty-scheckout-label-notifications">
+                <label class="amscheckout-label"><?php echo $this->__('To checkout as a guest add your email below'); ?></label>
+                <label class="amscheckout-label"><?php echo $this->__('Log in to your account by adding your details below'); ?></label>
+            </div>
+        </div>
+        <?php endif; ?>
+        <div class="amasty-scheckout-fields">
+            <div class="amasty-scheckout-field">
+                <label class="amscheckout-label" for="amasty-scheckout-login-email"><?php echo $this->__('Email')?><em>*</em></label>
+                <input id="amasty-scheckout-login-email" type="input" class="input-text required-entry"/>
+            </div>
+            <div class="amasty-scheckout-field amasty-scheckout-field-password">
+                <label class="amscheckout-label" for="amasty-scheckout-login-password"><?php echo $this->__('Password')?></label>
+                <?php if ($this->isAllowGuestCheckout()): ?>
+                <label class="amscheckout-label amscheckout-label-guest-checkout" for="amasty-scheckout-login-password"><?php echo $this->__('To register an account simply add a password')?></label>
+                <?php endif; ?>
+                <input id="amasty-scheckout-login-password" type="password" class="input-text"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    //<![CDATA[
+    var amastyScheckoutLogin = new AmastyScheckoutLogin(
+        $('amasty-scheckout-login'),
+        $('amasty-scheckout-login-messagebox'),
+        '<?php echo $this->getUrl('amscheckoutfront/login/check', array('_secure' => true))?>',
+        '<?php echo (string)$this->isAllowGuestCheckout()?>',
+        '<?php echo $this->getEmailMessagesBlock()->toHtml() ?>',
+        '<?php echo $this->getPasswordMessagesBlock()->toHtml() ?>',
+        '<?php echo $this->getValidTlds()?>'
+
+    );
+</script>
+
+<?php if ($this->isAllowGuestCheckout()): ?>
+<script type="text/javascript">
+    document.observe('dom:loaded', function() {
+        $('amasty-scheckout-guest-checkout').observe('click', function(){
+            $('amasty-scheckout-login-password').up().select('label')[0].hide();
+            $('amasty-scheckout-login-password').up().select('label')[1].show();
+
+            $$('.amasty-scheckout-label-notifications')[0].select('label')[0].show();
+            $$('.amasty-scheckout-label-notifications')[0].select('label')[1].hide();
+
+            $(this).addClassName('active');
+            $('amasty-scheckout-login-account').removeClassName('active');
+
+            if ($('amasty-scheckout-login-email') && !$('amasty-scheckout-login-email').value.length) {
+                $('amasty-scheckout-login-password').value = '';
+                Form.Element.disable('amasty-scheckout-login-password');
+            }
+        });
+
+        $('amasty-scheckout-login-account').observe('click', function(){
+            $('amasty-scheckout-login-password').up().select('label')[0].show();
+            $('amasty-scheckout-login-password').up().select('label')[1].hide();
+
+            $$('.amasty-scheckout-label-notifications')[0].select('label')[0].hide();
+            $$('.amasty-scheckout-label-notifications')[0].select('label')[1].show();
+
+            $('amasty-scheckout-guest-checkout').removeClassName('active');
+            $(this).addClassName('active');
+
+            Form.Element.enable('amasty-scheckout-login-password');
+        });
+
+        $('amasty-scheckout-guest-checkout').click();
+    });
+    //]]>
+</script>
+<?php endif; ?>

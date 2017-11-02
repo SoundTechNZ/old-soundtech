@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_PaymentDetect
+ */
+-->
+<layout>
+    <checkout_onepage_paymentmethod>
+        <reference name="root">
+            <block type="core/template" name="checkout.onepage.payment.methods.scripts" as="scripts" />
+            <block type="core/template" name="checkout.onepage.payment.methods.additional" as="additional" />
+        </reference>
+    </checkout_onepage_paymentmethod>
+
+    <checkout_onepage_index>
+        <reference name="head">
+            <action method="addItem">
+                <type>js</type>
+                <name>amasty/ampaymentdetect/detector.js</name>
+            </action>
+            <action method="addCss">
+                <stylesheet>css/amasty/ampaymentdetect/detector.css</stylesheet>
+            </action>
+        </reference>
+        <reference name="checkout.onepage.payment">
+            <block type="core/template" name="checkout.onepage.payment.additional" as="additional" />
+            <block type="core/template" name="checkout.onepage.payment.methods_additional" as="methods_additional" />
+        </reference>
+        <reference name="checkout.onepage.payment.additional">
+            <block
+                    type="amasty_paymentdetect/detector"
+                    name="amasty.paymentdetect.detector"
+                    template="amasty/ampaymentdetect/detector.phtml"
+                    />
+        </reference>
+    </checkout_onepage_index>
+
+    <checkout_onepage_paymentmethod>
+        <reference name="checkout.onepage.payment.methods.additional">
+            <block
+                    type="core/template"
+                    name="amasty.paymentdetect.layout"
+                    template="amasty/ampaymentdetect/layout.phtml"
+                    />
+            <block
+                    type="amasty_paymentdetect/detector"
+                    name="amasty.paymentdetect.detector"
+                    template="amasty/ampaymentdetect/detector.phtml"
+            />
+        </reference>
+    </checkout_onepage_paymentmethod>
+</layout>
