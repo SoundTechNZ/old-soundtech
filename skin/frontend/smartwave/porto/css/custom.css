@@ -269,8 +269,9 @@ ul.scene > li.layer{width:100%;height:100%}
 }
 .menu.side-menu>li.menu-full-width .nav-sublist-dropdown {
   height: 370px;
-  width: 949px;
+  width: 959px;
   padding: 15px 0 15px 0;
+  margin-left: -10px;
 }
 /*.menu.side-menu>li .nav-sublist-dropdown:before {*/
   /*border: 0;*/
@@ -347,12 +348,12 @@ div.mobile-nav .sw-mobile-menu li>a span.cat-label, .menu.side-menu li>a span.ca
 
 @media (max-width:1319px) {
   .menu.side-menu>li.menu-full-width .nav-sublist-dropdown {
-    width: 869px;
+    width: 879px;
   }
 }
 @media (max-width:1199px) {
   .menu.side-menu>li.menu-full-width .nav-sublist-dropdown {
-    width: 719px;
+    width: 729px;
   }
   /* Std */
   #banner-slider-demo-6 img {
