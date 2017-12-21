@@ -339,7 +339,9 @@ div.mobile-nav .sw-mobile-menu li>a span.cat-label, .menu.side-menu li>a span.ca
 }
 
 /* Detail page */
-
+.block.block-related {
+  margin-bottom: -50px;
+}
 
   /* Checkout */
 .opc-ajax-loader {

@@ -226,6 +226,7 @@
             <remove name="catalog.compare.sidebar"/>
             <remove name="right.permanent.callout"/>
             <block type="core/template" before="product.right.custom1" name="product_view_brand" template="catalog/product/view/brand.phtml"/>
+            <block type="catalog/product_list_related" name="catalog.product.related" after="product.right.custom1" template="catalog/product/list/related.phtml"/>
             <block type="cms/block" name="product.right.custom1" before="-"><action method="setBlockId"><block_id>porto_product_right_side_1</block_id></action></block>
             <block type="cms/block" name="product.right.custom2" after="product.right.custom1"><action method="setBlockId"><block_id>porto_product_right_side_2</block_id></action></block>
         </reference>
