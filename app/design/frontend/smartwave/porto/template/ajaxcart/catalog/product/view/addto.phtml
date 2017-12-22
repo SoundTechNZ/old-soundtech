@@ -9,7 +9,7 @@
 		$_compareUrl = $this->helper('catalog/product_compare')->getAddUrl($_product);
 	?>
 	<?php if($_compareUrl) : ?>
-		<li><a href="#" onclick="ajaxCompare(this,'<?php echo $_compareUrl?>','<?php echo $_product->getId()?>'); return false;" class="link-compare"><i class="icon-compare"></i><span><?php echo $this->__('Add to Compare'); ?></span></a></li>
+		<li><a href="#" onclick="ajaxCompare(this,'<?php echo $_compareUrl?>','<?php echo $_product->getId()?>'); return false;" class="link-compare"><i class="icon-compare-link"></i><span><?php echo $this->__('Add to Compare'); ?></span></a></li>
 	<?php endif; ?>    
 	</ul>
 <?php else : ?>
@@ -21,7 +21,7 @@
         $_compareUrl = $this->helper('catalog/product_compare')->getAddUrl($_product);
     ?>
     <?php if($_compareUrl) : ?>
-        <li><a href="<?php echo $_compareUrl ?>" class="link-compare"><i class="icon-compare"></i><span><?php echo $this->__('Add to Compare'); ?></span></a></li>
+        <li><a href="<?php echo $_compareUrl ?>" class="link-compare"><i class="icon-compare-link"></i><span><?php echo $this->__('Add to Compare'); ?></span></a></li>
     <?php endif; ?>
     </ul>
 <?php endif;?>	

@@ -238,7 +238,7 @@
                                         <a href="javascript:void(0);" class="addtocart outofstock" title="<?php echo $this->__('Out of stock') ?>"><?php echo $this->__('Out of stock') ?></span></a>
                                     <?php endif; ?>
                                     <?php if(Mage::getStoreConfig("porto_settings/category/compare", $code) && $_compareUrl=$this->getAddToCompareUrl($_product)): ?>
-                                        <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtolinks/enablecategory", $code)):?>javascript:void(0)<?php else: ?><?php echo $_compareUrl ?><?php endif; ?>" <?php if(Mage::getStoreConfig("ajaxcart/addtolinks/enablecategory", $code)):?>onclick="ajaxCompare(this,'<?php echo $_compareUrl ?>','<?php echo $_product->getId()?>');"<?php endif; ?> class="comparelink" title="<?php echo $this->__('Add to Compare') ?>"><i class="icon-compare"></i></a>
+                                        <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtolinks/enablecategory", $code)):?>javascript:void(0)<?php else: ?><?php echo $_compareUrl ?><?php endif; ?>" <?php if(Mage::getStoreConfig("ajaxcart/addtolinks/enablecategory", $code)):?>onclick="ajaxCompare(this,'<?php echo $_compareUrl ?>','<?php echo $_product->getId()?>');"<?php endif; ?> class="comparelink" title="<?php echo $this->__('Add to Compare') ?>"><i class="icon-compare-link"></i></a>
                                     <?php endif; ?>
                                     <div class="clearer"></div>
                                 </div>
@@ -444,7 +444,7 @@
                                     <a href="javascript:void(0);" class="addtocart outofstock" title="<?php echo $this->__('Out of stock') ?>"><?php echo $this->__('Out of stock') ?></span></a>
                                 <?php endif; ?>
                                 <?php if(Mage::getStoreConfig("porto_settings/category/compare", $code) && $_compareUrl=$this->getAddToCompareUrl($_product)): ?>
-                                    <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtolinks/enablecategory", $code)):?>javascript:void(0)<?php else: ?><?php echo $_compareUrl ?><?php endif; ?>" <?php if(Mage::getStoreConfig("ajaxcart/addtolinks/enablecategory", $code)):?>onclick="ajaxCompare(this,'<?php echo $_compareUrl ?>','<?php echo $_product->getId()?>');"<?php endif; ?> class="comparelink" title="<?php echo $this->__('Add to Compare') ?>"><i class="icon-compare"></i></a>
+                                    <a href="<?php if(Mage::getStoreConfig("ajaxcart/addtolinks/enablecategory", $code)):?>javascript:void(0)<?php else: ?><?php echo $_compareUrl ?><?php endif; ?>" <?php if(Mage::getStoreConfig("ajaxcart/addtolinks/enablecategory", $code)):?>onclick="ajaxCompare(this,'<?php echo $_compareUrl ?>','<?php echo $_product->getId()?>');"<?php endif; ?> class="comparelink" title="<?php echo $this->__('Add to Compare') ?>"><i class="icon-compare-link"></i></a>
                                 <?php endif; ?>
                                 <div class="clearer"></div>
                             </div>
