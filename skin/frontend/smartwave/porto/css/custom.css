@@ -348,6 +348,17 @@ div.mobile-nav .sw-mobile-menu li>a span.cat-label, .menu.side-menu li>a span.ca
   display: none !important;
 }
 
+/* Modify for Availability */
+.product-view .product-shop .availability {
+  color: #000000;
+  font-weight: 700;
+}
+
+.product-view .product-shop .availability span {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
 @media (max-width:1319px) {
   .menu.side-menu>li.menu-full-width .nav-sublist-dropdown {
     width: 879px;
